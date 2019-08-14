@@ -1,0 +1,72 @@
+/*
+ * Globals
+ */
+
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.map{
+  width:900px;
+  height:800px;
+}
+
+.form{
+  width:700px;
+  height:35px;
+}
+
+.form1-position{
+  position:absolute;
+  top:825px;
+}
+
+.form2-position{
+  position:absolute;
+  top:865px;
+}
+
+.button1-position{
+  position:absolute;
+  top:825px;
+  left:780px;
+}
+
+.button2-position{
+  position:absolute;
+  top:865px;
+  left:780px;
+}
+
+.panel {
+  background-color:#ffffff;
+  width:600px;
+  height:900px;
+  overflow-y:scroll;
+}
