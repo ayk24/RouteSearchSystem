@@ -1,21 +1,24 @@
 # RouteSearchSystem
+<img src="https://github.com/ayk24/RouteSearchSystem/blob/master/doc/ui.png" width=50%>  
 
 ## Database Structure
 #### users <User's Registration Information>
-user_id  : ユーザを判別するための一意のID   
-username : ユーザ登録の際に設定したユーザ名  
-email    : ユーザ登録の際に設定したメールアドレス  
-password : ユーザ登録の際に設定したパスワードをハッシュ化したもの  
+<img src="https://github.com/ayk24/RouteSearchSystem/blob/master/doc/users_database.png" width=50%>  
+user_id : Unique ID to identify the user.  
+username : User name you set up when you registered.  
+email : The email address you entered during user registration.  
+password: Hash of the password that was set during user registration.  
 
 #### history <keeps a history of searched routes>  
-history_id   : 履歴を判別するための一意のID  
-user_id      : ユーザを判別するための一意のID(外部キー)  
-share        : 共有を許可するかどうかを示すboolean型の変数( 1:許可, 0:不許可 )  
-origin       : 出発地の情報  
-destination  : 目的地の情報  
-travelmode   : 利用する交通機関の情報  
-time         : かかる時間の情報  
-distance     : かかる距離の情報   
+<img src="https://github.com/ayk24/RouteSearchSystem/blob/master/doc/history_database.png" width=50%>
+history_id : a unique ID to determine the history  
+user_id : Unique ID for identifying the user (foreign key)  
+share : Variables of type boolean that indicate whether sharing is allowed or not ( 1:Allowed, 0:Disallowed )  
+origin : Information on origin  
+destination : Information about the destination  
+travelmode : Information on transportation  
+time : information on the time it takes  
+distance : Information on the distance involved  
 
 ## Usage
 1. Register a user in signup.php, or log in with login.php  
@@ -27,21 +30,17 @@ distance     : かかる距離の情報
 
  RouteSearchSystem   
 　├ core  
-　│　└ config.php : データベースのログイン情報  
-　│  
-　├ css : bootstrap や 自作したCSS が入っている.  
-　│  
-　├ img : 画像が入っている.  
-　│  
-　├ js : bootstrap や map生成を行うプログラムが入っている.  
-　│　└ googlemap.js    : 最初のmap生成, ルート検索, 検索履歴の登録の処理の一部を行う.  
-　│  
-　├ checked.php 　     : 共有の許可, 不許可の処理を行った際のデータベース側での処理  
-　├ dbconnect.php      : データベースへの接続を行う.  
-　├ home.php           : 検索したいルートの情報の入力を行ったり, 結果を表示する.  
-　├ insert_history.php : 検索した履歴をデータベースに保存する処理.  
-　├ login.php          : ユーザ認証を行う.  
-　├ logout.php         : クリックするとログインページにリダイレクトする.  
-　├ show_history.php   : 自分の検索履歴を表示する.(他人のものは見えない)  
-　├ show_shareinfo.php : 共有が許可されているルートの履歴を閲覧する.  
-　└ signup.php         : ユーザの登録を行う.  
+　│　└ config.php : Database login information  
+　├ css  
+　├ img  
+　├ js : It contains programs for bootstrapping and map generation.    
+　│　└ googlemap.js    : Part of the process of generating the first map, finding a route, and registering the search history.  
+　├ checked.php 　     : Database-side processing when the sharing is allowed or disallowed  
+　├ dbconnect.php      : Make a connection to the database.  
+　├ home.php           : You can enter the information of the route you want to search and view the results.  
+　├ insert_history.php : The process of storing the search history in the database.  
+　├ login.php  
+　├ logout.php  
+　├ show_history.php   : View your search history. (You can't see other people's stuff.)    
+　├ show_shareinfo.php : View the history of routes that are allowed to be shared.  
+　└ signup.php  
