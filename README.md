@@ -2,23 +2,11 @@
 <img src="https://github.com/ayk24/RouteSearchSystem/blob/master/doc/ui.png" width=50%>  
 
 ## Database Structure
-#### users <User's Registration Information>
+#### users < User's Registration Information >
 <img src="https://github.com/ayk24/RouteSearchSystem/blob/master/doc/users_database.png" width=50%>  
-user_id : Unique ID to identify the user.  
-username : User name you set up when you registered.  
-email : The email address you entered during user registration.  
-password: Hash of the password that was set during user registration.  
 
-#### history <keeps a history of searched routes>  
-<img src="https://github.com/ayk24/RouteSearchSystem/blob/master/doc/history_database.png" width=50%>
-history_id : a unique ID to determine the history  
-user_id : Unique ID for identifying the user (foreign key)  
-share : Variables of type boolean that indicate whether sharing is allowed or not ( 1:Allowed, 0:Disallowed )  
-origin : Information on origin  
-destination : Information about the destination  
-travelmode : Information on transportation  
-time : information on the time it takes  
-distance : Information on the distance involved  
+#### history < history of searched routes >
+<img src="https://github.com/ayk24/RouteSearchSystem/blob/master/doc/history_database.png" width=50%>  
 
 ## Usage
 1. Register a user in signup.php, or log in with login.php  
