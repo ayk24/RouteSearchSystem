@@ -1,11 +1,14 @@
-# RouteSearchSystem
+# Route Search System
+
+## Description
 <img src="https://github.com/ayk24/RouteSearchSystem/blob/master/doc/ui.png" width=50%>  
 
-## Database Structure
-#### users < User's Registration Information >
+## Feature
+### Database Structure
+- **users**: user's registration information
 <img src="https://github.com/ayk24/RouteSearchSystem/blob/master/doc/users_database.png" width=50%>  
 
-#### history < history of searched routes >
+- **history**: history of searched routes
 <img src="https://github.com/ayk24/RouteSearchSystem/blob/master/doc/history_database.png" width=50%>  
 
 ## Usage
@@ -16,7 +19,8 @@
 4. If you switch to the navigation bar of "History", you can see your (the logged-in user) search history.  
    If you check the checkbox, you can share your route history with others.  
 
- RouteSearchSystem   
+## Anything Else
+**RouteSearchSystem**  
 　├ core  
 　│　└ config.php : Database login information  
 　├ css  
